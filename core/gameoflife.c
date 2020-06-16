@@ -22,7 +22,7 @@ char** createGrid() {
 }
 
 char** copyGrid(char*** grid_ptr) {
-    const char** grid = *grid_ptr;
+    char** grid = *grid_ptr;
     char** copy = createGrid();
     for (unsigned int i = 0; i < GOL_HEIGHT; ++i) {
         for (unsigned int j = 0; j < GOL_WIDTH; ++j) {
