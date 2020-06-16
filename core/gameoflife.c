@@ -52,7 +52,7 @@ char** playGameOfLifeTurn() {
             unsigned int maxY = (i + 1) >= GOL_HEIGHT ? (GOL_HEIGHT - 1) : (i + 1);
             for (unsigned int x = ((j - 1) < 0 ? 0 : (j - 1)); x < maxX; ++x) {
                 for (unsigned int y = ((i - 1) < 0 ? 0 : (i - 1)); y < maxY; ++y) {
-                    if (x == 0 && y == 0) {
+                    if (x == j && y == i) {
                         continue;
                     }
                     aliveNeighbours += oldState[y][x] ? 1 : 0;
