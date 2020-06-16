@@ -71,6 +71,8 @@ char** playGameOfLifeTurn() {
     }
 
     freeGrid(oldState);
+
+    return GAME_OF_LIFE;
 }
 
 void freeGameOfLife() {
